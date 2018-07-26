@@ -2,7 +2,6 @@
 @import url(../css/animate.css);
 @import url(../css/wide.css);
 @import url(../css/narrow.css);
-
 * {
     padding: 0;
     margin: 0;
@@ -22,8 +21,7 @@ input {
     background: #5a394e;
 }
 
-.top-menu:before,
-.top-menu:after {
+.top-menu:before, .top-menu:after {
     content: "";
     position: absolute;
     z-index: 2;
@@ -33,12 +31,12 @@ input {
 
 .top-menu:before {
     top: 0;
-    border-bottom: 1px dashed rgba(255,255,255,.2);
+    border-bottom: 1px dashed rgba(255, 255, 255, .2);
 }
 
 .top-menu:after {
     bottom: 0;
-    border-top: 1px dashed rgba(255,255,255,.2);
+    border-top: 1px dashed rgba(255, 255, 255, .2);
 }
 
 .menu-main {
@@ -68,7 +66,7 @@ input {
 }
 
 .menu-main a:hover {
-    background: rgba(0,0,0,.2);
+    background: rgba(0, 0, 0, .2);
 }
 
 .left_wrapper {
@@ -78,7 +76,7 @@ input {
     background: -o-linear-gradient(top, #fff457 0%, #ffa600 34%, #ffa600 89%, #ffd059 100%);
     background: -ms-linear-gradient(top, #fff457 0%, #ffa600 34%, #ffa600 89%, #ffd059 100%);
     background: linear-gradient(to bottom, #fff457 0%, #ffa600 34%, #ffa600 89%, #ffd059 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff457', endColorstr='#ffd059', GradientType=0 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff457', endColorstr='#ffd059', GradientType=0);
 }
 
 blockquote {
@@ -146,27 +144,13 @@ h2 {
 }
 
 .table_price td {
-    padding:  10px 20px;
+    padding: 10px 20px;
 }
 
 .table_price td:last-child {
     text-align: center;
     min-width: 160px;
 }
-
-/*.gallery {*/
-    /*width: 100%;*/
-    /*text-align: center;*/
-/*}*/
-
-/*.gallery img {*/
-    /*width: 29%;*/
-    /*height: 180px;*/
-    /*margin: 10px;*/
-    /*border: 6px solid #ee9b00;*/
-    /*border-radius: 8px;*/
-    /*cursor: pointer;*/
-/*}*/
 
 .table_customers .first_emblem {
     background: url("../img/emblem/eda.png") no-repeat;
@@ -180,12 +164,10 @@ h2 {
     background: url("../img/emblem/badge.png") no-repeat;
 }
 
-.table_customers .first_emblem,
-.table_customers .second_emblem,
-.table_customers .third_emblem {
+.table_customers .first_emblem, .table_customers .second_emblem, .table_customers .third_emblem {
     background-size: 100%;
     border-radius: 50%;
-    box-shadow: 10px 10px 10px 0 rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.75);
 }
 
 .table_customers p {
@@ -195,7 +177,7 @@ h2 {
 footer {
     width: 100%;
     min-width: 300px;
-    border-top: 1px dashed rgba(255,255,255,.2);
+    border-top: 1px dashed rgba(255, 255, 255, .2);
     background: #1e151b;
     display: block;
     clear: both;
@@ -231,10 +213,7 @@ footer a {
 }
 
 @media screen and (max-height: 600px) {
-    .services li,
-    .contacts,
-    blockquote,
-    .tape{
+    .services li, .contacts, blockquote, .tape {
         font-size: 130%;
     }
 }
@@ -244,57 +223,46 @@ footer a {
         display: block;
         text-align: center;
     }
-
     .gallery_mobile img {
         width: 70%;
-        box-shadow: 10px 10px 10px 0 rgba(0,0,0,0.75);
+        box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.75);
         margin: 5px 0 10px;
         border-top-left-radius: 25px;
     }
-
     .table_customers {
         margin: 10px;
         display: block;
         min-width: 250px;
     }
-
-    .table_customers .image,
-    .table_customers .text {
+    .table_customers .image, .table_customers .text {
         display: block;
     }
-
     .table_customers .first_emblem {
         width: 100px;
         height: 100px;
         margin: 0 auto 20px;
     }
-
     .table_customers .second_emblem {
         width: 100px;
         height: 100px;
         margin: 40px auto 20px;
     }
-
     .table_customers .third_emblem {
         width: 100px;
         height: 100px;
         margin: 40px auto 20px;
     }
-
     .table_customers p {
         text-align: center;
     }
 }
 
 @media screen and (max-width: 1200px) {
-    .menu-main a,
-    .tape {
+    .menu-main a, .tape {
         font-size: 120%;
     }
-
     .tape p {
         padding-top: 10px;
-
     }
 }
 
@@ -310,7 +278,6 @@ footer a {
         height: 32px;
         cursor: pointer;
     }
-
     .top-menu {
         position: absolute;
         top: -300px;
@@ -321,48 +288,36 @@ footer a {
         margin: 0;
         transition: top .2s;
     }
-
-    #menu:checked + .top-menu {
+    #menu:checked+.top-menu {
         top: 0;
     }
-
-    .menu-main li,
-    .menu-main a {
+    .menu-main li, .menu-main a {
         display: block;
         margin: 0;
     }
-
-    .top-menu:after,
-    .top-menu:before {
+    .top-menu:after, .top-menu:before {
         left: 0;
     }
-
     .left_side {
         margin-top: 100px;
         min-width: 300px;
     }
-
     blockquote {
         display: none;
     }
-
-    .info,
-    .box {
+    .info, .box {
         width: 100%;
         float: none;
         margin: 0;
     }
-
     .box {
         margin-bottom: 20px;
         text-align: center;
     }
-
     .services {
         margin-left: 10px;
         font-size: 130%;
     }
-
     .contacts {
         padding-top: 10px;
         position: absolute;
@@ -375,11 +330,9 @@ footer a {
         text-shadow: 1px 1px 1px #717171;
         font-size: 130%;
     }
-
     .right_side {
         min-width: 300px;
     }
-
     .block {
         min-width: 300px;
         padding: 0 0 20px 0;
@@ -388,16 +341,13 @@ footer a {
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
     }
-
     .table_price table {
         min-width: 300px;
         background-color: transparent;
     }
-
     .table_price td {
-        padding:  10px 5px;
+        padding: 10px 5px;
     }
-
     .table_price td:last-child {
         text-align: center;
         min-width: inherit;

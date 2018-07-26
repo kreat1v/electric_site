@@ -1,29 +1,20 @@
 @media screen and (min-width: 831px) {
-    html,
-    body {
+    html, body {
         height: 100%;
     }
-
     body {
         background: url(../img/lamp-2.jpg) 90% 150px no-repeat fixed;
         background-size: 70%;
     }
-
     header {
         width: 65%;
         float: right;
         margin: 30px 0;
     }
-
     .top-menu {
         margin: 0 60px 0 0;
-        box-shadow:
-                inset 1px 0 0 rgba(255,255,255,.1),
-                inset -1px 0 0 rgba(255,255,255,.1),
-                inset 150px 0 150px -150px rgba(255,255,255,.12),
-                inset -150px 0 150px -150px rgba(255,255,255,.12);
+        box-shadow: inset 1px 0 0 rgba(255, 255, 255, .1), inset -1px 0 0 rgba(255, 255, 255, .1), inset 150px 0 150px -150px rgba(255, 255, 255, .12), inset -150px 0 150px -150px rgba(255, 255, 255, .12);
     }
-
     .menu-main:after {
         content: "";
         position: absolute;
@@ -36,14 +27,12 @@
         transform: rotate(360deg);
         z-index: -1;
     }
-
     .left_side {
         position: fixed;
         width: 35%;
         height: 100%;
         z-index: 5;
     }
-
     .left_wrapper {
         float: right;
         width: 93%;
@@ -51,24 +40,21 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        -webkit-box-shadow: 14px 3px 31px -1px rgba(0,0,0,0.84);
-        -moz-box-shadow: 14px 3px 31px -1px rgba(0,0,0,0.84);
-        box-shadow: 14px 3px 31px -1px rgba(0,0,0,0.84);
+        -webkit-box-shadow: 14px 3px 31px -1px rgba(0, 0, 0, 0.84);
+        -moz-box-shadow: 14px 3px 31px -1px rgba(0, 0, 0, 0.84);
+        box-shadow: 14px 3px 31px -1px rgba(0, 0, 0, 0.84);
         border-left: 2px solid #ffdb39;
         border-right: 2px solid #ffdb39;
     }
-
     blockquote {
         margin: 10px 20px;
         text-align: right;
         font-size: 200%;
         word-wrap: break-word;
     }
-
     .box {
         position: relative;
     }
-
     .tape {
         position: relative;
         display: block;
@@ -77,9 +63,9 @@
         height: 60px;
         width: 70%;
         background: #5a394e;
-        -webkit-box-shadow: 10px 9px 38px 5px rgba(0,0,0,0.75);
-        -moz-box-shadow: 10px 9px 38px 5px rgba(0,0,0,0.75);
-        box-shadow: 10px 9px 38px 5px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 10px 9px 38px 5px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 9px 38px 5px rgba(0, 0, 0, 0.75);
+        box-shadow: 10px 9px 38px 5px rgba(0, 0, 0, 0.75);
         font-family: 'Yanone Kaffeesatz', sans-serif;
         font-size: 170%;
         color: #E8DBC2;
@@ -88,16 +74,13 @@
         text-align: center;
         border-left: 1px solid rgba(255, 255, 255, .1);
     }
-
-    .tape::after,
-    .tape::before {
+    .tape::after, .tape::before {
         position: absolute;
         content: '';
         box-sizing: border-box;
         border-radius: 1px;
         right: 0;
     }
-
     .tape::before {
         margin: 0 -40px;
         width: 0;
@@ -109,7 +92,6 @@
         border-radius: 1px;
         z-index: -1;
     }
-
     .tape::after {
         margin: 0 -39px;
         width: 0;
@@ -119,7 +101,6 @@
         border-color: #5a394e transparent #5a394e #5a394e;
         z-index: 6;
     }
-
     .framing {
         position: absolute;
         width: 110%;
@@ -130,31 +111,25 @@
         border-bottom: 1px dashed rgba(255, 255, 255, .2);
         z-index: 20;
     }
-
     .services {
         margin: 25px 0 15px 12%;
     }
-
     .services li {
-        font-size: 130%;
+        font-size: 120%;
         text-indent: -31px;
         letter-spacing: 2px;
     }
-
-    .contacts{
+    .contacts {
         margin: 20px 0 0 15%;
         font-size: 180%;
     }
-
     .contacts a {
         display: inline-block;
     }
-
     .contacts_wrapper {
         display: block;
         cursor: pointer;
     }
-
     .tel {
         width: 25px;
         height: 25px;
@@ -163,17 +138,14 @@
         display: inline-block;
         margin-right: 10px;
     }
-
     .right_side {
         width: 65%;
         float: right;
     }
-
     main {
         background-color: #000000;
         margin-top: 70%;
     }
-
     .footer_wrapper {
         margin-left: 35%;
     }
@@ -183,7 +155,6 @@
     .gallery_mobile {
         display: none;
     }
-
     .gallery {
         display: block;
         position: relative;
@@ -195,7 +166,6 @@
         background-size: auto 100%;
         text-align: center;
     }
-
     .gallery label {
         display: inline-block;
         width: 70px;
@@ -205,108 +175,69 @@
         background-size: 100%;
         cursor: pointer;
     }
-
     .gallery label:hover {
         border-top: 5px solid #686868;
     }
-
-    #foto1:checked ~ .gallery label:nth-of-type(1),
-    #foto2:checked ~ .gallery label:nth-of-type(2),
-    #foto3:checked ~ .gallery label:nth-of-type(3),
-    #foto4:checked ~ .gallery label:nth-of-type(4),
-    #foto5:checked ~ .gallery label:nth-of-type(5),
-    #foto6:checked ~ .gallery label:nth-of-type(6) {
+    #foto1:checked~.gallery label:nth-of-type(1), #foto2:checked~.gallery label:nth-of-type(2), #foto3:checked~.gallery label:nth-of-type(3), #foto4:checked~.gallery label:nth-of-type(4), #foto5:checked~.gallery label:nth-of-type(5), #foto6:checked~.gallery label:nth-of-type(6) {
         opacity: .4;
         cursor: default;
     }
-
-    #foto1:checked ~ .gallery,
-    .gallery label:nth-of-type(1) {
+    #foto1:checked~.gallery, .gallery label:nth-of-type(1) {
         background-image: url(../img/works/IMG_20170524_095024_HDR.jpg);
     }
-
-    #foto2:checked ~ .gallery,
-    .gallery label:nth-of-type(2) {
+    #foto2:checked~.gallery, .gallery label:nth-of-type(2) {
         background-image: url(../img/works/IMG_20170524_095118_HDR.jpg);
     }
-
-    #foto3:checked ~ .gallery,
-    .gallery label:nth-of-type(3) {
+    #foto3:checked~.gallery, .gallery label:nth-of-type(3) {
         background-image: url(../img/works/IMG_20170524_163904.jpg);
     }
-
-    #foto4:checked ~ .gallery,
-    .gallery label:nth-of-type(4) {
+    #foto4:checked~.gallery, .gallery label:nth-of-type(4) {
         background-image: url(../img/works/IMG_20170524_163925.jpg);
     }
-
-    #foto5:checked ~ .gallery,
-    .gallery label:nth-of-type(5) {
+    #foto5:checked~.gallery, .gallery label:nth-of-type(5) {
         background-image: url(../img/works/IMG_20170705_170833_HDR.jpg);
     }
-
-    #foto6:checked ~ .gallery,
-    .gallery label:nth-of-type(6) {
+    #foto6:checked~.gallery, .gallery label:nth-of-type(6) {
         background-image: url(../img/works/IMG_20170524_095025.jpg);
     }
-
     .gallery label:before {
         position: absolute;
         top: 40%;
         border-width: 25px 17px;
         border-style: solid;
     }
-
-    #foto1:checked ~ .gallery label:nth-of-type(2):before,
-    #foto2:checked ~ .gallery label:nth-of-type(3):before,
-    #foto3:checked ~ .gallery label:nth-of-type(4):before,
-    #foto4:checked ~ .gallery label:nth-of-type(5):before,
-    #foto5:checked ~ .gallery label:nth-of-type(6):before,
-    #foto6:checked ~ .gallery label:nth-of-type(1):before {
+    #foto1:checked~.gallery label:nth-of-type(2):before, #foto2:checked~.gallery label:nth-of-type(3):before, #foto3:checked~.gallery label:nth-of-type(4):before, #foto4:checked~.gallery label:nth-of-type(5):before, #foto5:checked~.gallery label:nth-of-type(6):before, #foto6:checked~.gallery label:nth-of-type(1):before {
         content: "";
         right: 0;
         border-color: transparent transparent transparent #686868;
         box-shadow: -2px 0 0 -1px #000;
     }
-
-    #foto1:checked ~ .gallery label:nth-of-type(6):before,
-    #foto2:checked ~ .gallery label:nth-of-type(1):before,
-    #foto3:checked ~ .gallery label:nth-of-type(2):before,
-    #foto4:checked ~ .gallery label:nth-of-type(3):before,
-    #foto5:checked ~ .gallery label:nth-of-type(4):before,
-    #foto6:checked ~ .gallery label:nth-of-type(5):before {
+    #foto1:checked~.gallery label:nth-of-type(6):before, #foto2:checked~.gallery label:nth-of-type(1):before, #foto3:checked~.gallery label:nth-of-type(2):before, #foto4:checked~.gallery label:nth-of-type(3):before, #foto5:checked~.gallery label:nth-of-type(4):before, #foto6:checked~.gallery label:nth-of-type(5):before {
         content: "";
         left: 0;
         border-color: transparent #686868 transparent transparent;
         box-shadow: 2px 0 0 -1px #000;
     }
-
     .table_customers {
         margin: 20px 50px;
         display: table;
     }
-
-    .table_customers .image,
-    .table_customers .text {
+    .table_customers .image, .table_customers .text {
         display: table-cell;
         vertical-align: middle;
     }
-    
     .table_customers .first_emblem {
         width: 150px;
         height: 150px;
     }
-
     .table_customers .second_emblem {
         width: 150px;
         height: 150px;
     }
-
     .table_customers .third_emblem {
         width: 150px;
         height: 150px;
     }
-
     .table_customers p {
         padding-left: 30px;
     }
